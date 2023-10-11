@@ -1,0 +1,64 @@
+.multi-range-slider {
+  // display: none !;
+  // padding: 10rem !important;
+}
+.bar,
+.bar-left,
+
+
+.bar-right {
+  height: 3px !important;
+  padding: 0 !important;
+}
+.bar-left {
+  background-color: #f7f7f7 !important;
+}
+.bar-inner {
+  background-color: #181a20 !important;
+}
+.thumb {
+  // thumb-right
+  background-color: white;
+  border: none !important;
+  // font-size: 15rem !important;
+}
+.input-type-range {
+  &-max {
+    background-color: red !important;
+  }
+  // } input-type-range-max
+}
+
+
+// SCROLL
+
+/* Pour les navigateurs Webkit (Chrome, Safari, etc.) */
+/* Largeur de la barre de défilement */
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+}
+
+/* Style de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    background-color: #f7f7f7; /* Couleur de la barre de défilement */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Style de la barre de défilement lorsqu'elle est survolée */
+::-webkit-scrollbar-thumb:hover {
+    border: 1px solid #181a20;
+    cursor: all-scroll;
+    // background-color: #555;
+     /* Couleur de la barre de défilement au survol */
+}
+
+/* Pour Firefox */
+/* Largeur de la barre de défilement */
+// scrollbar-width: thin;
+
+/* Style de la barre de défilement */
+// scrollbar-color: #888 transparent;
+
+/* Style de la barre de défilement lorsqu'elle est survolée */
+// scrollbar-color: #555 transparent;

@@ -1,0 +1,32 @@
+.card {
+  width: 25rem;
+  height: 21rem;
+  background-color: white;
+  border: 1px solid #d6d4d4;
+  position: relative;
+  border-radius: 20px;
+  &__wrapper {
+    padding: 3rem;
+  }
+  &__number {
+    font-size: 3rem;
+    color: $main-color;
+  }
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+  &__description{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+  &__icon{
+    font-size: 3rem;
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    color: $main-color;
+  }
+}

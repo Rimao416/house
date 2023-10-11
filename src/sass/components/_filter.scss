@@ -1,0 +1,124 @@
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.filter{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background: white;
+    z-index: 150;
+    padding: 2.5rem;
+    width: 551px;
+    // height: 500px;
+   
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        // border: 1px solid red;
+        .icon{
+            cursor: pointer;
+            background-color: #ececec;
+            padding: 1rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+        }
+    }
+    &__separator{
+        width: 100%;
+        height: 1px;
+        // background-color: #ececec;
+        margin: 1rem 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        // transform: translateY(-100%);
+        border: 1px solid #ececec;
+    }
+    &__content{
+        height: 500px;
+        overflow: scroll;
+        &--header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+            gap: 1rem;
+            // background-color: red;
+            // display: none;
+        }
+    }
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        button{
+            // padding: 1rem 2rem;
+            border: none;
+            outline: none;
+            border-radius: 1rem;
+            cursor: pointer;
+            // background-color: #181A20;   
+            &:nth-child(1){
+                background: none;
+                font-weight: 600;
+                text-decoration: underline;
+            }
+            &:nth-child(2){
+                background-color: $main-color;
+                padding: 1rem 2rem;
+                color: white;
+                font-family: "Sora";
+            }
+        }
+    }
+}
+.checkbox{
+&__label{
+    font-weight: 400;
+    margin-left: 2rem;
+
+}
+}
+input[type="checkbox"]{
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    border: 1px solid #181a20;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    // display: flex;
+    // align-items: center;
+    &::after{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: '\f00c';
+        font-size: 10px;
+       
+        color: white;
+    }
+    &:checked{
+        background-color: #181a20;
+        color: white;
+    }
+}
+
