@@ -10,7 +10,15 @@ import Type_2 from "../assets/images/h7-t2.jpg";
 import Type_3 from "../assets/images/h7-t3.jpg";
 import Type_4 from "../assets/images/h7-t4.jpg";
 import Type_5 from "../assets/images/h7-t5.png";
-import Type_6 from "../assets/images/h7-t6.png";
+import Type_6 from "../assets/images/h7-t6.png";import {Link} from "react-router-dom"
+import {
+  BiLogoFacebook,
+  BiLogoTwitter,
+  BiLogoGooglePlus,
+  BiLogoInstagram,
+} from "react-icons/bi";
+
+
 
 import WOMAN_1 from "../assets/images/WOMAN_1.jpg";
 import WOMAN_2 from "../assets/images/WOMAN_2.jpg";
@@ -383,6 +391,105 @@ function Home() {
           </Swiper>
         </div>
       </section>
+      <section className="newsletter">
+            <div className="newsletter__wrapper">
+              <h4 className="newsletter__title">S'abonner à notre newsletter</h4>
+              <p className="newsletter__description">Soyez le premier à être informé de nos réductions, offres et événements</p>
+            </div>
+            <div className="newsletter__wrapper">
+              <input type="email" placeholder="Adresse e-mail" name="" id="" className="newsletter__input"/>
+              <button type="submit" className="newsletter__button">Envoyer</button>
+            
+            </div>
+      </section>
+
+
+
+      <section className="footer">
+      <div className="footer__wrapper">
+        <div className="footer__wrapper--row">
+        <h5 className="footer__header">Houset</h5>
+          <div className="footer__social">
+            <span className="footer__social--item">
+              <BiLogoFacebook />
+            </span>
+            <span className="footer__social--item">
+              <BiLogoTwitter />
+            </span>
+            <span className="footer__social--item">
+              <BiLogoGooglePlus />
+            </span>
+            <span className="footer__social--item">
+              <BiLogoInstagram />
+            </span>
+          </div>
+        </div>
+        <div className="footer__wrapper--row">
+          <h4 className="footer__header" alt="">
+            Contacts
+          </h4>
+          <ul className="footer__list">
+            <li className="footer__item">
+              Elliott Ave, Parkville VIC 3052, Melbourne Canada
+            </li>
+            <li className="footer__item">Phone: +31 85 964 47 25</li>
+            <li className="footer__item">Email: support@helpo.org</li>
+          </ul>
+        </div>
+        <div className="footer__wrapper--row">
+          <h4 className="footer__header" alt="">
+            Menu & Liens
+          </h4>
+          <ul className="footer__list">
+            <li className="footer__item">
+              <Link to="#" className="footer__item--link">
+                Accueil
+              </Link>
+            </li>
+            <li className="footer__item">
+              <Link to="#" className="footer__item--link">
+                A Propos
+              </Link>
+            </li>
+            <li className="footer__item">
+              <Link to="#" className="footer__item--link">
+                Cause
+              </Link>
+            </li>
+            <li className="footer__item">
+              <Link to="#" className="footer__item--link">
+                Temoignages
+              </Link>
+            </li>
+            <li className="footer__item">
+              <Link to="#" className="footer__item--link">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="footer__wrapper--row">
+          <h4 className="footer__header" alt="">
+            Newsletter
+          </h4>
+          <ul className="footer__list">
+            <li className="footer__item">
+            Ne manquez jamais une opportunité immobilière exceptionnelle ! Abonnez-vous à notre newsletter pour recevoir des mises à jour exclusives sur les nouvelles propriétés et les offres spéciales.
+            </li>
+            <li className="footer__item">
+              <button className="footer__item--button">S'abonner</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="footer__bottom">
+        <p>© {new Date().getFullYear()} House By Docovery</p>
+
+        <span>© Tous droits reservés</span>
+      </div>
+    </section>
+
+
     </div>
   );
 }
